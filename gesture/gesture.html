@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>手势密码</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<link type="text/css" rel="stylesheet" href="css/gestureUI.css" />
+	</head>
+	<body>
+		<script src="js/gestureUI.js"></script>
+		<script>
+			// 调用手势密码组件，创建组件对象，宽度和高度初始化为手机可见区域的宽度和高度
+			var gesture = new Gesture(document.documentElement.clientWidth, document.documentElement.clientHeight); 
+			gesture.init();
+		</script>
+	</body>
+</html> 

@@ -1,0 +1,96 @@
+* {
+	/*浏览器默认的margin和padding不同，加一个全局的*{ margin: 0; padding: 0; }来统一*/
+	margin: 0;
+	padding: 0;
+	font-family: Microsoft Yahei;
+}
+body {
+	background: #eeeeee;
+}
+header {
+	/* 为后续id为#time的子div设置绝对定位实现水平垂直居中做准备 */
+	position: relative;
+	font-size: 14px;
+	width: 100%;
+	height: 20px;
+	/* 为头部同时设置背景色和背景图片 */
+	background: url(../images/battery.png) no-repeat 96% 50% #f5f5f5;
+}
+.circle: first-child {
+	margin-left: 10px;
+}
+.circle {
+	width: 12px;  
+	height: 12px;  
+	/* 通过HTML5的border-radius属性绘制圆形 */
+	border-radius: 15px; 
+	float: left;	
+	background: black;
+	/* 根据父元素header的height和其height设置margin-top实现其垂直居中 */
+	margin-top: 4px;
+}
+#chinaMobile {
+	width: 60px;
+	/* 设置文字垂直居中 */
+	line-height: 20px;
+	float: left;
+	margin-left: 5px;
+}
+#time {
+	width: 100px; 
+	/* 设置文字垂直居中 */
+	line-height: 20px;
+	/* 设置绝对定位，并设置合适的left、top、margin-left、margin-top实现其水平垂直居中 */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -10px;
+	text-align: center;
+	font-family: Arial;
+}
+nav {
+	font-size: 16px;
+	text-align: center;
+	/* 设置文字垂直居中 */
+	line-height: 100px;
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #555555;
+	background: #f5f5f5;
+}
+article {
+	width: 100%;
+	height: 250px;
+	font-size: 16px;
+	/* 设置画布水平居中 */
+	text-align: center;
+}
+section {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	/* 设置文字水平居中 */
+	text-align: center;
+	font-size: 16px;
+}
+aside {
+	width: 100%;
+	height: 100px;
+	/* 设置文字行高来调整行间距离 */
+	line-height: 50px;
+	/* 设置文字水平居中 */
+	text-align: center;
+	font-size: 16px;
+}
+input[type="radio"] {
+	/* 设置单选按钮的大小 */
+	width: 20px;
+	height: 20px;
+	/* 设置input与文字垂直居中对齐*/
+	vertical-align: middle;
+}
+aside span {
+	/* 设置单选按钮与文字之间的间隔 */
+	margin-left: 10px;
+}
